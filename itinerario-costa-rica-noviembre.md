@@ -174,6 +174,110 @@ Las tres son excelentes para noviembre. Ninguna toca el Caribe.
 
 ---
 
+## Dónde hospedarse (NO te quedes en San José)
+
+San José no tiene atractivo turístico y está a 3-5 horas de cada destino. Lo ideal es mover el hospedaje según la zona. Aquí van opciones reales por zona con precios verificados 2026.
+
+### La Fortuna / Arenal (Opciones 1 y 2)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal dormitorio | Arenal Hostel Resort | $7 - $15 | Centro de La Fortuna, cocina compartida, terraza |
+| Hostal privado | Hostel Batzu | $20 - $35 | Habitación privada, parking gratis, céntrico |
+| Airbnb estudio | Apartamentos céntricos | $30 - $50 | Cocina equipada, A/C, a 3 min del centro |
+| Hotel medio | Hoteles 3 estrellas | $50 - $80 | Piscina, desayuno incluido, vista al volcán |
+| Hotel con termales | Arenal Manoa / Lomas del Volcán | $90 - $150 | Termales privadas incluidas, restaurante |
+
+**Tip:** Quédate en el centro de La Fortuna, no sobre la carretera al volcán — caminas a restaurantes y sodas, y los tours te recogen en el hotel.
+
+Fuente: [Hostelworld La Fortuna](https://www.hostelworld.com/hostels/north-america/costa-rica/la-fortuna/) | [Airbnb La Fortuna](https://www.airbnb.com/la-fortuna-costa-rica/stays)
+
+### Monteverde / Santa Elena (Opción 1)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal dormitorio | Hostels desde $16/noche | $16 - $20 | Santa Elena, cocina, ambiente mochilero |
+| Hostal/pensión | Pensión Santa Elena | $28 - $40 | WiFi, jardín, limpieza diaria |
+| Hotel económico | Hoteles desde $30 | $30 - $50 | Santa Elena centro |
+| Hotel medio | Hoteles 3 estrellas | $60 - $100 | Rodeados de bosque, restaurante |
+| Ecolodge | Hotel Belmar / similar | $120 - $200 | Experiencia inmersa en el bosque nuboso |
+
+**Tip:** Santa Elena es el "centro" de Monteverde — hostales, restaurantes y tour operators están ahí. Los hoteles sobre la carretera a la reserva son más caros pero más tranquilos.
+
+Fuente: [Tripadvisor Monteverde](https://www.tripadvisor.com/Hotels-g951347-Monteverde_Province_of_Puntarenas-Hotels.html) | [Tripadvisor Santa Elena](https://www.tripadvisor.com/Hotels-g644053-Santa_Elena_Monteverde_Province_of_Puntarenas-Hotels.html) | [Kayak Monteverde hostales](https://www.kayak.com/Monteverde-Hotels_Hostel.Thostel.46223.hotel.ksp)
+
+### Manuel Antonio / Quepos (Opción 2)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal | Hostales en Quepos | $15 - $30 | Quepos es más barato que Manuel Antonio |
+| Airbnb | Apartamentos/estudios | $40 - $80 | Desde $80/noche según Airbnb; Quepos más barato |
+| Hotel medio | Hoteles 3 estrellas | $70 - $120 | Piscina, cerca del parque |
+| Hotel con vista | Hoteles sobre la colina | $120 - $200 | Vista al océano y selva |
+
+**Tip:** Quepos (pueblo, 15 min del parque) es mucho más barato que los hoteles sobre la carretera Manuel Antonio-Quepos. Si rentas auto o tomas bus, quédate en Quepos y ahorra 30-50% en hospedaje.
+
+Fuente: [Airbnb Manuel Antonio](https://www.airbnb.com/manuel-antonio-quepos-costa-rica/stays)
+
+### Uvita / Dominical (Opción 2)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal | Hostales en Uvita | $12 - $25 | Zona menos turística = más barato |
+| Airbnb/cabaña | Cabañas y estudios | $35 - $60 | Rodeadas de naturaleza |
+| Hotel medio | Hoteles y lodges | $60 - $100 | Cerca de Marino Ballena |
+
+**Tip:** Uvita y Dominical son más baratos que Manuel Antonio con playas igual de bonitas y menos gente.
+
+### Nosara (Opción 3)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal dormitorio | Nosara Hostel (Playa Guiones) | $7 - $15 | Cerca de la playa, ambiente surfista |
+| Hostal privado | Habitación privada | $25 - $40 | |
+| Hotel económico | Hoteles desde $34 | $34 - $66 | Según Expedia/Tripadvisor |
+| Hotel medio | Hoteles 3 estrellas | $66 - $120 | Piscina, restaurante |
+| Hotel boutique | Gilded Iguana Surf Hotel | $276 | Playa Guiones, lujo surfista |
+
+**Tip:** Nosara es más caro que Sámara (es destino de yoga/surf internacional). Si el presupuesto aprieta, quédate más noches en Sámara.
+
+Fuente: [Hostelworld Nosara](https://www.hostelworld.com/hostels/north-america/costa-rica/nosara/) | [Tripadvisor Nosara](https://www.tripadvisor.com/Hotels-g656474-Nosara_Province_of_Guanacaste-Hotels.html) | [Expedia Nosara](https://www.expedia.com/Nosara-Hotels.d2585.Travel-Guide-Hotels)
+
+### Sámara (Opción 3)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Hostal/económico | Hoteles desde $18 | $18 - $35 | Pueblo tranquilo, playa segura |
+| Hotel medio | Hoteles 3 estrellas | $40 - $80 | Cerca de la playa |
+| Hotel/resort | Opciones variadas | $80 - $150 | Todo cerca caminando |
+
+**Tip:** Sámara es más compacto y barato que Nosara. Todo queda caminando: playa, restaurantes, tour operators.
+
+Fuente: [Kayak Sámara](https://www.kayak.com/Samara-Hotels.54076.hotel.ksp)
+
+### Rincón de la Vieja (Opción 3)
+
+| Tipo | Nombre / Ejemplo | Precio por noche USD | Notas |
+|------|------------------|---------------------|-------|
+| Lodge/hotel | Lodges cerca del parque | $50 - $120 | Zona rural, pocos hostales |
+| Hacienda | Hacienda Guachipelín / similares | $100 - $180 | Incluyen actividades (canopy, termales, cabalgata) |
+
+**Tip:** Aquí no hay "pueblo" — son lodges y haciendas aislados cerca del parque. Algunos incluyen actividades en el precio, lo cual compensa el costo más alto.
+
+### Resumen: hospedaje por noche según presupuesto
+
+| Zona | Económico (USD) | Cómodo (USD) | Económico (MXN aprox.) | Cómodo (MXN aprox.) |
+|------|----------------|-------------|----------------------|---------------------|
+| La Fortuna | $15 - $35 | $50 - $100 | $260 - $600 | $850 - $1,700 |
+| Monteverde | $16 - $40 | $60 - $120 | $270 - $680 | $1,000 - $2,000 |
+| Manuel Antonio | $15 - $40 (Quepos) | $70 - $150 | $260 - $680 | $1,200 - $2,500 |
+| Uvita | $12 - $35 | $60 - $100 | $200 - $600 | $1,000 - $1,700 |
+| Nosara | $15 - $40 | $66 - $150 | $260 - $680 | $1,100 - $2,500 |
+| Sámara | $18 - $35 | $40 - $80 | $300 - $600 | $680 - $1,400 |
+| Rincón de la Vieja | $50 - $80 | $100 - $180 | $850 - $1,400 | $1,700 - $3,000 |
+
+---
+
 ## Operadores y tours verificados (precios 2026 en USD)
 
 Precios investigados en línea, verificados contra fuentes de operadores y plataformas de reserva. Convertir a MXN multiplicando por ~17-18 según tipo de cambio.
