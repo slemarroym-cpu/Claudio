@@ -289,3 +289,96 @@ Diciembre cambia el panorama: es **temporada alta** en casi todos estos destinos
 1. **Guatemala** — Sigue siendo el más barato aunque suba un poco.
 2. **Cuba** — Si reservas con anticipación, los precios son controlados (economía regulada).
 3. **Colombia (Medellín)** — La "Feria de las Flores" ya pasó pero la ciudad tiene alumbrados navideños espectaculares y el clima es perfecto todo diciembre.
+
+### Destinos fuera de América que brillan en diciembre
+
+Diciembre abre opciones que en noviembre no son tan atractivas o que en diciembre están en su mejor momento.
+
+#### Europa — Temporada baja = precios bajos (si no te importa el frío)
+
+**España (Madrid, Barcelona, Andalucía)**
+- **Clima:** 8-16 °C. Andalucía (Sevilla, Granada) más templada (12-18 °C). Frío pero soleado.
+- **Vuelo CDMX:** ~10-11 h directo. Desde ~$12,000-18,000 MXN redondo (sube en Navidad a $20,000+).
+- **Presupuesto 7 días:** $18,000 - $28,000 MXN.
+- **Por qué en diciembre:** Mercados navideños, ambiente festivo, museos sin filas. Hoteles y Airbnb en temporada baja (excepto Navidad misma). Vuelos directos desde CDMX con Aeroméxico e Iberia.
+- **Visa:** No requerida (Schengen, 90 días).
+
+**Portugal (Lisboa, Oporto)**
+- **Clima:** 10-16 °C, algo de lluvia. Más templado que el resto de Europa.
+- **Vuelo CDMX:** ~10-12 h (escala en Madrid generalmente). Desde ~$13,000-19,000 MXN.
+- **Presupuesto 7 días:** $16,000 - $25,000 MXN.
+- **Por qué en diciembre:** El destino más económico de Europa occidental. Pastéis de nata, fado, vino de Oporto. Temporada baja total = pocos turistas.
+- **Visa:** No requerida (Schengen).
+
+**Italia (Roma, Florencia, Nápoles)**
+- **Clima:** 6-14 °C. Frío pero sin nieve en el sur.
+- **Vuelo CDMX:** ~12-14 h (con escala). Desde ~$14,000-20,000 MXN.
+- **Presupuesto 7 días:** $20,000 - $30,000 MXN.
+- **Por qué en diciembre:** Museos vacíos, hoteles a mitad de precio, comida increíble. Roma en Navidad es mágica (Vaticano, belenes). Nápoles es más barata y con mejor pizza.
+- **Visa:** No requerida (Schengen).
+
+#### África / Medio Oriente — Clima perfecto, experiencias únicas
+
+**Marruecos (Marrakech, Fez, Desierto del Sahara)**
+- **Clima:** Marrakech 10-20 °C, soleado y fresco. Desierto frío de noche (puede bajar a 5 °C), agradable de día. Ideal para caminar.
+- **Vuelo CDMX:** ~13-16 h (escala en Madrid o París). Desde ~$14,000-20,000 MXN.
+- **Presupuesto 7 días:** $12,000 - $20,000 MXN (Marruecos es muy barato en destino).
+- **Por qué en diciembre:** Temporada baja = menos turistas en medinas y zocos. Clima perfecto para caminar (no el calor infernal del verano). Noche en el desierto del Sahara con cielos estrellados. Comida desde $30-60 MXN. Riads (hospedaje tradicional) desde $400-700 MXN/noche.
+- **Visa:** No requerida para mexicanos (90 días).
+- **Tip:** La primera quincena es más barata; Navidad sube precios en riads populares.
+
+**Egipto (El Cairo, Luxor, Asuán)**
+- **Clima:** El Cairo 13-21 °C, Luxor 11-24 °C. Cielos despejados. La mejor época del año para visitar.
+- **Vuelo CDMX:** ~16-20 h (2 escalas generalmente). Desde ~$11,000-19,000 MXN.
+- **Presupuesto 7 días:** $15,000 - $25,000 MXN (incluyendo crucero por el Nilo).
+- **Por qué en diciembre:** Diciembre es EL mes para Egipto. Clima perfecto para pirámides (no 45 °C como en verano). Crucero por el Nilo de Luxor a Asuán. Templos de Karnak, Valle de los Reyes, Abu Simbel. Egipto es sorprendentemente económico en destino.
+- **Visa:** Al llegar, $35 USD en el aeropuerto.
+
+#### Asia — Temporada alta pero con razón
+
+**Tailandia (Bangkok, Chiang Mai, islas del sur)**
+- **Clima:** Temporada seca y fresca — el mejor clima del año. Bangkok 22-32 °C, Chiang Mai 15-28 °C. Islas del sur soleadas.
+- **Vuelo CDMX:** ~20-24 h (2 escalas). Desde ~$15,000-25,000 MXN.
+- **Presupuesto 7 días:** $14,000 - $22,000 MXN (una vez allá todo es barato).
+- **Por qué en diciembre:** El mejor mes para ir. Cero lluvia, temperaturas perfectas. Comida callejera desde $20-40 MXN, hospedaje desde $200-500 MXN/noche. Templos, playas, selva. Diciembre es temporada alta pero Tailandia sigue siendo muy económica.
+- **Visa:** No requerida para mexicanos (30 días).
+
+**Vietnam (Hanoi, Ha Long Bay, Hoi An, Ho Chi Minh)**
+- **Clima:** Norte fresco y seco (15-22 °C en Hanoi), centro seco y agradable, sur cálido (28-32 °C).
+- **Vuelo CDMX:** ~20-24 h (2 escalas). Desde ~$15,000-22,000 MXN.
+- **Presupuesto 7 días:** $10,000 - $18,000 MXN (el más barato de Asia).
+- **Por qué en diciembre:** Clima ideal en norte y centro. Comida desde $15-30 MXN, hospedaje desde $150-350 MXN/noche. Ha Long Bay, Hoi An (faroles), Mekong. Todo cuesta la mitad que Tailandia.
+- **Visa:** E-visa en línea (~$25 USD).
+
+**Japón (Tokio, Kioto, Osaka)**
+- **Clima:** Invierno — 3-12 °C. Frío pero seco y soleado. Nieve en zonas montañosas.
+- **Vuelo CDMX:** ~16-18 h (escala). Desde ~$16,000-25,000 MXN.
+- **Presupuesto 7 días:** $25,000 - $40,000 MXN.
+- **Por qué en diciembre:** Iluminaciones de invierno espectaculares en Tokio y Osaka, onsen (aguas termales japonesas), templos nevados en Kioto. Comida increíble. Menos turistas que en primavera (sakura). Si te gusta el esquí, Niseko y Hakuba son de clase mundial.
+- **Visa:** No requerida para mexicanos (180 días).
+
+#### Tabla resumen — Destinos fuera de América para diciembre
+
+| Destino | Vuelo | Clima dic. | Presupuesto 7 días MXN | Lo mejor |
+|---------|-------|-----------|----------------------|---------|
+| España | 10 h directo | 8-18 °C fresco | $18,000-28,000 | Mercados navideños, museos vacíos |
+| Portugal | 10-12 h | 10-16 °C | $16,000-25,000 | El más barato de Europa occidental |
+| Italia | 12-14 h | 6-14 °C | $20,000-30,000 | Roma en Navidad, museos sin filas |
+| Marruecos | 13-16 h | 10-20 °C ideal | $12,000-20,000 | Baratísimo en destino, desierto, cultura |
+| Egipto | 16-20 h | 13-24 °C perfecto | $15,000-25,000 | Pirámides + Nilo, EL mes para ir |
+| Tailandia | 20-24 h | 22-32 °C seco | $14,000-22,000 | Mejor clima del año, muy barato |
+| Vietnam | 20-24 h | 15-32 °C variado | $10,000-18,000 | Lo más barato de todo, comida increíble |
+| Japón | 16-18 h | 3-12 °C frío | $25,000-40,000 | Iluminaciones, onsen, templos nevados |
+
+#### Top 3 fuera de América para diciembre
+
+1. **Marruecos** — Clima ideal, increíblemente barato, experiencia totalmente diferente. El vuelo es largo pero con escala en Madrid sale bien.
+2. **Tailandia** — Su mejor mes. Una vez allá gastas menos que en Guatemala. El vuelo es lo caro.
+3. **Egipto** — Diciembre es perfecto para pirámides y Nilo. Vuelo barato considerando la distancia ($11,000+ MXN). Visa fácil al llegar.
+
+Fuentes:
+- [Momondo — Vuelos México-Europa](https://www.momondo.mx/vuelos/mexico/europa)
+- [KAYAK — Vuelos a Tailandia](https://www.kayak.com.mx/vuelos/Mexico-MX0/Tailandia-TH0)
+- [Unik Maroc Tours — Marruecos en diciembre](https://www.unikmaroctours.com/blog/viajar-a-marruecos-en-diciembre/)
+- [Saily — Mejor época para Egipto](https://saily.com/es/blog/mejor-epoca-para-viajar-egipto/)
+- [Going.com — Destinos cálidos en diciembre](https://www.going.com/guides/where-is-warm-in-december)
