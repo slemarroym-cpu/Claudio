@@ -24,7 +24,47 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 - **Plan de 7 días sugerido:** 3 noches Antigua (ruinas, volcanes, mercados) + 4 noches Lago Atitlán (pueblos como San Marcos, San Pedro, Panajachel).
 - **Visa:** No requerida (solo pasaporte).
 
-### 3. Cuba (La Habana + Trinidad + Varadero)
+### 3. Costa Rica
+- **Clima en noviembre:** Uno de los mejores meses. Costa Pacífico 25-33 °C con inicio de temporada seca; todo está verde por las lluvias recientes pero ya con sol constante. Caribe puede tener algo de lluvia, mejor evitarlo en noviembre.
+- **Vuelo:** ~3.5 h directo. Vuelos redondos desde ~$5,000-8,000 MXN.
+- **Presupuesto 7 días:** $13,000 - $24,000 MXN según el plan (ver opciones abajo).
+- **Por qué es top:** Noviembre es el momento perfecto: la naturaleza está en su máximo esplendor (verde, cascadas llenas, ríos caudalosos) pero el sol ya domina. Fauna increíble que ves sin esfuerzo (monos, perezosos, tucanes, ranas). Playas de primer nivel. Volcanes activos con aguas termales. Uno de los países más seguros de Latinoamérica.
+- **Visa:** No requerida.
+
+#### Opciones según presupuesto dentro de Costa Rica
+
+**Opción económica — Solo Guanacaste ($13,000 - $17,000 MXN)**
+- Quedarte en una sola zona baja costos de transporte interno.
+- 7 noches en Tamarindo o Sámara: playa, surf, snorkel, Parque Nacional Rincón de la Vieja.
+- Hospedaje: hostales o Airbnb desde $400-600 MXN/noche.
+- Comida en sodas (comedores locales): $60-100 MXN por platillo. El casado (plato típico) es abundante y barato.
+- Transporte: autobuses públicos entre pueblos ($50-150 MXN por trayecto).
+
+**Opción intermedia — Pacífico central ($16,000 - $20,000 MXN)**
+- 3 noches Manuel Antonio (playa + parque nacional, uno de los mejores del país) + 4 noches Uvita/Dominical (playa Ballena, cataratas Nauyaca, menos turístico).
+- Hospedaje: Airbnb $500-800 MXN/noche.
+- Renta de auto compartido baja costos vs. shuttles privados.
+
+**Opción completa — Ruta clásica ($19,000 - $24,000 MXN)**
+- 1 noche San José + 3 noches Arenal/Monteverde (volcán, aguas termales, puentes colgantes, bosque nuboso) + 3 noches Manuel Antonio (playa + parque).
+- Incluye shuttles privados entre destinos (~$1,500-2,500 MXN por trayecto) o renta de auto (~$4,000-6,000 MXN la semana con seguro básico).
+
+#### Costa Rica vs Colombia — Comparativa directa
+
+| Factor | Costa Rica | Colombia |
+|--------|-----------|----------|
+| Vuelo desde CDMX | 3.5 h directo | 5 h directo |
+| Clima noviembre | Excelente (inicio seca) | Excelente (seca costera) |
+| Presupuesto mínimo 7 días | ~$13,000 MXN | ~$12,000 MXN |
+| Comida | Similar a México ($60-150) | Más barata ($50-80) |
+| Hospedaje/noche | $400-900 MXN | $300-600 MXN |
+| Fuerte en | Naturaleza, fauna, playas | Ciudad, cultura, playa, fiesta |
+| Seguridad | Muy alta | Alta en zonas turísticas |
+| Ideal para | Aventura, desconexión, parejas | Diversidad, gastronomía, mochileros |
+
+**Veredicto:** Si tu prioridad es naturaleza y desconexión, Costa Rica gana. Si buscas más variedad de experiencias con menor presupuesto, Colombia. Ambos tienen clima perfecto en noviembre.
+
+### 4. Cuba (La Habana + Trinidad + Varadero)
 - **Clima en noviembre:** 24-30 °C, humedad baja, fin de temporada de huracanes. Muy agradable.
 - **Vuelo:** ~3 h directo. Vuelos redondos desde ~$4,000-7,000 MXN.
 - **Presupuesto 7 días:** $10,000 - $16,000 MXN todo incluido.
@@ -36,22 +76,13 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 
 ## Tier 2 — Excelente opción, un poco más de presupuesto
 
-### 4. Perú (Lima + Cusco + Machu Picchu)
+### 5. Perú (Lima + Cusco + Machu Picchu)
 - **Clima en noviembre:** Lima 17-22 °C nublada; Cusco 7-20 °C, inicio de lluvias pero manejable (no es temporada fuerte aún).
 - **Vuelo:** ~6 h directo a Lima. Vuelos redondos desde ~$6,000-10,000 MXN.
 - **Presupuesto 7 días:** $15,000 - $22,000 MXN todo incluido.
 - **Por qué ir:** Machu Picchu con menos turistas que en temporada alta (junio-agosto). La gastronomía limeña es de las mejores del mundo. Cusco es mágico. El sol peruano es accesible.
 - **Consideración climática:** En Cusco puede llover por las tardes, pero las mañanas suelen estar despejadas. Llevar impermeable ligero.
 - **Plan de 7 días sugerido:** 2 noches Lima (Miraflores, Barranco, ceviche) + 4 noches Cusco/Valle Sagrado/Machu Picchu + 1 noche Lima.
-- **Visa:** No requerida.
-
-### 5. Costa Rica (San José + Manuel Antonio o Guanacaste)
-- **Clima en noviembre:** Pacífico 25-33 °C, inicio de temporada seca. Caribe puede tener lluvia.
-- **Vuelo:** ~3.5 h directo. Vuelos redondos desde ~$5,000-8,000 MXN.
-- **Presupuesto 7 días:** $16,000 - $24,000 MXN todo incluido.
-- **Por qué ir:** Naturaleza de primer nivel (monos, perezosos, tucanes), playas hermosas, surf, volcanes. Noviembre en el Pacífico es ideal: verde por las lluvias recientes pero ya con sol.
-- **Nota de precio:** Costa Rica es más caro que otros destinos centroamericanos. Comer cuesta similar a México. Hospedaje decente desde $600-900 MXN/noche.
-- **Plan de 7 días sugerido:** 1 noche San José + 3 noches Manuel Antonio (playa + parque nacional) + 3 noches Arenal/Monteverde (volcán, aguas termales, bosque nuboso).
 - **Visa:** No requerida.
 
 ### 6. República Dominicana (Punta Cana + Santo Domingo)
@@ -92,9 +123,9 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 |---|---------|-------|-----------|-------------------|---------------|
 | 1 | Colombia | 5 h | 🌤️ Seco, cálido | $12,000-18,000 | Playa + ciudad + cultura |
 | 2 | Guatemala | 2 h | 🌤️ Seco, templado | $8,000-13,000 | Cultural + naturaleza |
-| 3 | Cuba | 3 h | 🌤️ Cálido, poco húmedo | $10,000-16,000 | Playa + historia |
-| 4 | Perú | 6 h | 🌥️ Mixto (lluvia leve sierra) | $15,000-22,000 | Aventura + gastronomía |
-| 5 | Costa Rica | 3.5 h | 🌤️ Inicio seca, verde | $16,000-24,000 | Naturaleza + playa |
+| 3 | Costa Rica | 3.5 h | 🌤️ Inicio seca, verde | $13,000-24,000 | Naturaleza + playa + aventura |
+| 4 | Cuba | 3 h | 🌤️ Cálido, poco húmedo | $10,000-16,000 | Playa + historia |
+| 5 | Perú | 6 h | 🌥️ Mixto (lluvia leve sierra) | $15,000-22,000 | Aventura + gastronomía |
 | 6 | Rep. Dominicana | 4 h | 🌤️ Cálido, baja humedad | $14,000-22,000 | Playa + all-inclusive |
 | 7 | Argentina | 10 h | 🌤️ Primaveral, ideal | $18,000-28,000 | Ciudad + vinos + cultura |
 | 8 | Chile | 8 h | 🌤️ Seco, templado | $20,000-30,000 | Desierto + ciudad + vinos |
@@ -107,7 +138,7 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 - **Mejor balance precio/experiencia:** Colombia — económico, diverso, clima ideal, vuelo directo.
 - **Playa pura sin gastar mucho:** Cuba o República Dominicana.
 - **Aventura y gastronomía:** Perú — Machu Picchu + ceviche, precio razonable.
-- **Naturaleza salvaje:** Costa Rica — un poco más caro pero vale cada peso.
+- **Naturaleza y aventura:** Costa Rica — desde $13,000 si te quedas en una zona; el clima de noviembre es de los mejores del año.
 - **Si puedes estirar el presupuesto:** Argentina — experiencia de primer mundo a precio de tercer mundo con tipo de cambio favorable.
 
 ---
