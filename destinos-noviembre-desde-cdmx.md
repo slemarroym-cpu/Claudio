@@ -73,36 +73,69 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 | Tour Acatenango (2D/1N) | $600 - $1,000 |
 
 ### 3. Costa Rica
-- **Clima en noviembre:** Uno de los mejores meses. Costa Pacífico 25-33 °C con inicio de temporada seca; todo está verde por las lluvias recientes pero ya con sol constante. Caribe puede tener algo de lluvia, mejor evitarlo en noviembre.
 - **Vuelo:** ~3.5 h directo. Vuelos redondos desde ~$5,000-8,000 MXN.
 - **Presupuesto 7 días:** $13,000 - $24,000 MXN según el plan (ver opciones abajo).
-- **Por qué es top:** Noviembre es el momento perfecto: la naturaleza está en su máximo esplendor (verde, cascadas llenas, ríos caudalosos) pero el sol ya domina. Fauna increíble que ves sin esfuerzo (monos, perezosos, tucanes, ranas). Playas de primer nivel. Volcanes activos con aguas termales. Uno de los países más seguros de Latinoamérica.
+- **Por qué es top:** Noviembre es el momento perfecto: la naturaleza está en su máximo esplendor (verde, cascadas llenas, ríos caudalosos) pero el sol ya domina en el Pacífico. Fauna increíble que ves sin esfuerzo. Uno de los países más seguros de Latinoamérica.
 - **Visa:** No requerida.
 
-#### Opciones según presupuesto dentro de Costa Rica
+#### Clima en noviembre por zona — Dónde ir y dónde NO ir
 
-**Opción económica — Solo Guanacaste ($13,000 - $17,000 MXN)**
-- Quedarte en una sola zona baja costos de transporte interno.
-- 7 noches en Tamarindo o Sámara: playa, surf, snorkel, Parque Nacional Rincón de la Vieja.
-- Hospedaje: hostales o Airbnb desde $400-600 MXN/noche.
-- Comida en sodas (comedores locales): $60-100 MXN por platillo. El casado (plato típico) es abundante y barato.
-- Transporte: autobuses públicos entre pueblos ($50-150 MXN por trayecto).
+Costa Rica es pequeña pero tiene microclimas muy distintos. En noviembre la diferencia entre costas es crítica:
 
-**Opción intermedia — Pacífico central ($16,000 - $20,000 MXN)**
-- 3 noches Manuel Antonio (playa + parque nacional, uno de los mejores del país) + 4 noches Uvita/Dominical (playa Ballena, cataratas Nauyaca, menos turístico).
-- Hospedaje: Airbnb $500-800 MXN/noche.
-- Renta de auto compartido baja costos vs. shuttles privados.
+| Zona | Clima noviembre | Lluvia | Veredicto |
+|------|----------------|--------|-----------|
+| **Guanacaste / Pacífico Norte** | 28-35 °C, soleado | Muy poca — inicia temporada seca | **IR** |
+| **Pacífico Central** (Manuel Antonio, Uvita) | 27-32 °C, sol con nubes | Lluvias breves por la tarde, mañanas despejadas | **IR** |
+| **Arenal / Zona Norte** | 24-30 °C, parcialmente nublado | Lluvias moderadas, pero el volcán y termales son todo el día | **IR con reservas** |
+| **Monteverde** | 18-25 °C, fresco | Neblina y llovizna frecuente (es bosque nuboso, siempre así) | **IR** — la neblina es parte de la experiencia |
+| **Caribe Sur** (Puerto Viejo, Cahuita) | 26-30 °C | **Lluvias fuertes y frecuentes** — es su mes más lluvioso | **EVITAR** |
+| **Caribe Norte** (Tortuguero) | 26-30 °C | Lluvia constante | **EVITAR** |
+| **Valle Central** (San José) | 20-26 °C | Lluvias vespertinas | **Solo de paso** |
 
-**Opción completa — Ruta clásica ($19,000 - $24,000 MXN)**
-- 1 noche San José + 3 noches Arenal/Monteverde (volcán, aguas termales, puentes colgantes, bosque nuboso) + 3 noches Manuel Antonio (playa + parque).
-- Incluye shuttles privados entre destinos (~$1,500-2,500 MXN por trayecto) o renta de auto (~$4,000-6,000 MXN la semana con seguro básico).
+#### Lugares recomendados para noviembre
+
+**Guanacaste y Península de Nicoya (lo más seco y soleado):**
+- **Tamarindo** — Surf, vida nocturna, atardeceres. Playa Grande para tortugas baulas (noviembre es temporada de anidación).
+- **Playa Sámara** — Más tranquila, ideal para familias o desconexión. Snorkel, kayak.
+- **Nosara** — Yoga, surf, playa Guiones. Ambiente más bohemio y saludable.
+- **Santa Teresa / Mal País** — Surf de clase mundial, ambiente joven e internacional.
+- **Parque Nacional Rincón de la Vieja** — Volcán activo, pozas termales, cataratas, caminatas. Seco en noviembre.
+- **Playa Conchal** — Arena de conchas blancas, agua cristalina, snorkel.
+
+**Pacífico Central (sol de mañana, lluvia breve por la tarde):**
+- **Manuel Antonio** — El parque nacional más visitado: monos cara blanca, perezosos, mapaches, playas dentro del parque. Las mañanas son perfectas; la lluvia llega ~3-4 PM.
+- **Uvita** — Playa Ballena (forma de cola de ballena), cataratas Nauyaca, menos turistas. Noviembre es temporada de ballenas jorobadas.
+- **Dominical** — Surf fuerte, cascadas, ambiente relajado.
+
+**Interior (lluvia moderada pero experiencias que no dependen del sol):**
+- **Arenal** — El volcán se ve mejor temprano en la mañana. Aguas termales (Tabacón, Baldi, gratuitas del río) funcionan llueva o no. Puentes colgantes. La lluvia suele ser por la tarde.
+- **Monteverde** — Bosque nuboso: la neblina y llovizna son parte del ecosistema, no un problema. Puentes colgantes, canopy/tirolesa, avistamiento del quetzal.
+
+**Dónde NO ir en noviembre:**
+- **Puerto Viejo de Talamanca** — Aunque es hermoso (playas caribeñas, Parque Nacional Cahuita, cultura afrocostarricense), noviembre es el peor mes: lluvias intensas y prolongadas que arruinan días de playa. Mejor ir en septiembre-octubre o febrero-abril.
+- **Tortuguero** — Los canales y la selva son impresionantes, pero las lluvias de noviembre hacen los tours incómodos y los mosquitos se multiplican. Mejor ir en febrero-mayo.
+
+#### Planes de 7 días según zona (todos evitan el Caribe)
+
+**Plan A — Puro Pacífico seco ($13,000 - $17,000 MXN)**
+- 7 noches en Guanacaste: vuelo a Liberia (más cerca que San José).
+- 4 noches Nosara o Sámara (playa, surf, yoga) + 3 noches Tamarindo o Santa Teresa (playa, vida nocturna, snorkel).
+- Sol garantizado prácticamente todo el día.
+
+**Plan B — Pacífico Central + naturaleza ($16,000 - $20,000 MXN)**
+- 4 noches Manuel Antonio/Uvita (playa de mañana, parque nacional, ballenas) + 3 noches Arenal (volcán, termales, puentes colgantes).
+- Mañanas soleadas en la playa, actividades de interior por la tarde si llueve.
+
+**Plan C — Ruta completa ($19,000 - $24,000 MXN)**
+- 2 noches Arenal (termales, volcán) + 2 noches Monteverde (bosque nuboso, canopy) + 3 noches Manuel Antonio (playa + parque).
+- La más variada: volcán + bosque nuboso + playa. La lluvia no afecta Arenal/Monteverde significativamente porque las actividades son bajo techo o en agua.
 
 #### Costa Rica vs Colombia — Comparativa directa
 
 | Factor | Costa Rica | Colombia |
 |--------|-----------|----------|
 | Vuelo desde CDMX | 3.5 h directo | 5 h directo |
-| Clima noviembre | Excelente (inicio seca) | Excelente (seca costera) |
+| Clima noviembre | Excelente en Pacífico; evitar Caribe | Excelente en costa + Medellín |
 | Presupuesto mínimo 7 días | ~$13,000 MXN | ~$12,000 MXN |
 | Comida | Similar a México ($60-150) | Más barata ($50-80) |
 | Hospedaje/noche | $400-900 MXN | $300-600 MXN |
@@ -110,7 +143,7 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 | Seguridad | Muy alta | Alta en zonas turísticas |
 | Ideal para | Aventura, desconexión, parejas | Diversidad, gastronomía, mochileros |
 
-**Veredicto:** Si tu prioridad es naturaleza y desconexión, Costa Rica gana. Si buscas más variedad de experiencias con menor presupuesto, Colombia. Ambos tienen clima perfecto en noviembre.
+**Veredicto:** Si tu prioridad es naturaleza y desconexión, Costa Rica gana (quédate en el Pacífico). Si buscas más variedad de experiencias con menor presupuesto, Colombia. Ambos tienen clima perfecto en noviembre en las zonas correctas.
 
 ### 4. Cuba (La Habana + Trinidad + Varadero)
 - **Clima en noviembre:** 24-30 °C, humedad baja, fin de temporada de huracanes. Muy agradable.
