@@ -196,6 +196,48 @@ Costa Rica es pequeña pero tiene microclimas muy distintos. En noviembre la dif
 - **Plan de 7 días sugerido:** 2 noches Santiago + 1 noche Valparaíso + 4 noches San Pedro de Atacama.
 - **Visa:** No requerida.
 
+### 9. Panamá (Ciudad de Panamá + Bocas del Toro o San Blas)
+- **Clima en noviembre/diciembre:** Nov es transición; dic empieza temporada seca. 27-33 °C, húmedo pero con sol. Dic es mejor que nov.
+- **Vuelo:** ~4 h directo con Copa Airlines. Vuelos redondos desde ~$3,500-6,000 MXN (de los más baratos de la lista).
+- **Presupuesto 7 días:** $14,000 - $22,000 MXN.
+- **Por qué ir:** Canal de Panamá, Casco Viejo (colonial + rooftop bars), islas San Blas (operadas por la comunidad Guna Yala, playas vírgenes sin hoteles). Bocas del Toro para surf y fiesta. Ciudad moderna con buena gastronomía. Hub de Copa = vuelos baratos.
+- **Plan de 7 días sugerido:** 3 noches Ciudad de Panamá (Canal, Casco Viejo, Cinta Costera) + 4 noches San Blas (islas, snorkel, desconexión total) o Bocas del Toro (playa, surf, fiesta).
+- **Visa:** No requerida para mexicanos.
+
+### 10. El Salvador (San Salvador + playas + Ruta de las Flores)
+- **Clima en noviembre/diciembre:** Inicio de temporada seca. 25-32 °C en la costa, 18-26 °C en montañas. Excelente.
+- **Vuelo:** ~2.5 h directo. Vuelos redondos desde ~$3,000-5,000 MXN.
+- **Presupuesto 7 días:** $7,000 - $12,000 MXN (compite con Guatemala como el más barato).
+- **Por qué ir:** El destino emergente de Centroamérica. Surf de clase mundial (El Tunco, El Zonte, Punta Roca). Ruta de las Flores (pueblos coloniales, café, artesanías). Pupusas a $10-15 MXN. Volcanes, lagos. Mucho más barato que Costa Rica con playas comparables.
+- **Plan de 7 días sugerido:** 2 noches San Salvador (centro histórico, Joya de Cerén) + 2 noches Ruta de las Flores (Juayúa, Ataco, café) + 3 noches playa (El Tunco/El Zonte, surf, atardeceres).
+- **Visa:** No requerida para mexicanos.
+
+### 11. Ecuador (Quito + Baños + Galápagos opcional)
+- **Clima en noviembre/diciembre:** Sierra (Quito, Baños) 12-22 °C, algo de lluvia. Costa cálida 26-30 °C. Galápagos 24-28 °C (inicio temporada cálida).
+- **Vuelo:** ~5-6 h (escala en Panamá o Bogotá). Vuelos redondos desde ~$7,000-12,000 MXN.
+- **Presupuesto 7 días (sin Galápagos):** $12,000 - $20,000 MXN.
+- **Presupuesto 7 días (con Galápagos):** $30,000 - $50,000 MXN (Galápagos es caro: vuelo interno $5,000-8,000 MXN + entrada $200 USD + tours).
+- **Por qué ir:** Quito (centro histórico patrimonio UNESCO), Baños de Agua Santa (aventura: columpio del fin del mundo, rafting, cascadas, aguas termales), la Mitad del Mundo. Si el presupuesto alcanza, Galápagos es experiencia de vida.
+- **Plan de 7 días (sin Galápagos):** 2 noches Quito (centro colonial, teleférico, Mitad del Mundo) + 3 noches Baños (aventura) + 2 noches Cuenca o costa.
+- **Visa:** No requerida para mexicanos.
+
+### 12. Brasil (Río de Janeiro + opción Iguazú)
+- **Clima en diciembre:** Verano austral — Río 25-35 °C, caluroso y húmedo. Lluvias tropicales breves por la tarde. Playa perfecta.
+- **Vuelo:** ~9-10 h (escala en Panamá, Bogotá o São Paulo). Vuelos redondos desde ~$10,000-18,000 MXN.
+- **Presupuesto 7 días:** $20,000 - $32,000 MXN.
+- **Por qué ir:** Río en diciembre es energía pura: Copacabana, Ipanema, Cristo Redentor, Pan de Azúcar. Pre-carnaval comienza. Si agregas Iguazú (vuelo interno ~$3,000 MXN), las cataratas son de las más impresionantes del planeta.
+- **Consideración diciembre:** Temporada alta = precios suben. Navidad/Año Nuevo en Copacabana es masivo (fiesta, fuegos artificiales). Reservar con mucha anticipación.
+- **Visa:** No requerida para mexicanos.
+- **Nota:** Brasil funciona mejor en diciembre que en noviembre por el verano austral. En noviembre puede llover más.
+
+### 13. Bolivia (La Paz + Salar de Uyuni)
+- **Clima en diciembre:** La Paz 5-16 °C (frío seco, altitud 3,640 m). Uyuni: inicio de lluvias — el salar se inunda parcialmente creando el famoso efecto espejo.
+- **Vuelo:** ~8-10 h (escala en Lima o Bogotá a La Paz). Vuelos redondos desde ~$9,000-15,000 MXN.
+- **Presupuesto 7 días:** $15,000 - $25,000 MXN (vuelo interno La Paz-Uyuni aparte: ~$7,500 MXN).
+- **Por qué ir:** El Salar de Uyuni con efecto espejo (solo dic-marzo) es una de las imágenes más icónicas del mundo. La Paz es la capital más alta, con teleféricos, Mercado de las Brujas, Valle de la Luna.
+- **Consideración:** En diciembre la lluvia es ventaja (efecto espejo) pero puede limitar acceso a algunas zonas del salar (Isla Incahuasi a veces inaccesible). El mal de altura es real: tomar 1-2 días para aclimatarse.
+- **Visa:** No requerida para mexicanos.
+
 ---
 
 ## Tabla comparativa rápida
@@ -210,17 +252,25 @@ Costa Rica es pequeña pero tiene microclimas muy distintos. En noviembre la dif
 | 6 | Rep. Dominicana | 4 h | 🌤️ Cálido, baja humedad | $14,000-22,000 | Playa + all-inclusive |
 | 7 | Argentina | 10 h | 🌤️ Primaveral, ideal | $18,000-28,000 | Ciudad + vinos + cultura |
 | 8 | Chile | 8 h | 🌤️ Seco, templado | $20,000-30,000 | Desierto + ciudad + vinos |
+| 9 | Panamá | 4 h | 🌤️ Transición a seca | $14,000-22,000 | Ciudad + islas + playa |
+| 10 | El Salvador | 2.5 h | 🌤️ Inicio seca, cálido | $7,000-12,000 | Surf + pueblos + volcanes |
+| 11 | Ecuador | 5-6 h | 🌥️ Sierra lluviosa, costa seca | $12,000-20,000 | Aventura + cultura + naturaleza |
+| 12 | Brasil (Río) | 9-10 h | 🌤️ Verano austral, caluroso | $20,000-32,000 | Playa + ciudad + fiesta |
+| 13 | Bolivia | 8-10 h | 🌥️ Frío, inicio lluvias | $15,000-25,000 | Salar espejo + altiplano |
 
 ---
 
 ## Recomendación final según prioridad
 
-- **Presupuesto mínimo:** Guatemala — vuelo barato, todo barato, clima perfecto.
+- **Presupuesto mínimo:** El Salvador o Guatemala — vuelos baratos, todo barato, clima perfecto. El Salvador desde $7,000 MXN.
 - **Mejor balance precio/experiencia:** Colombia — económico, diverso, clima ideal, vuelo directo.
 - **Playa pura sin gastar mucho:** Cuba o República Dominicana.
+- **Surf y playa alternativa:** El Salvador — El Tunco/El Zonte, pupusas a $10 MXN, ambiente relajado.
 - **Aventura y gastronomía:** Perú — Machu Picchu + ceviche, precio razonable.
 - **Naturaleza y aventura:** Costa Rica — desde $13,000 si te quedas en una zona; el clima de noviembre es de los mejores del año.
-- **Si puedes estirar el presupuesto:** Argentina — experiencia de primer mundo a precio de tercer mundo con tipo de cambio favorable.
+- **Islas y desconexión:** Panamá — San Blas (Guna Yala) para playas vírgenes, vuelo directo barato con Copa.
+- **Experiencia extrema:** Ecuador (con Galápagos) o Bolivia (Salar de Uyuni con efecto espejo dic-marzo).
+- **Si puedes estirar el presupuesto:** Argentina — experiencia de primer mundo a precio de tercer mundo con tipo de cambio favorable. Brasil si quieres playa + fiesta en temporada de verano.
 
 ---
 
