@@ -16,13 +16,61 @@ Los presupuestos estimados incluyen vuelo redondo, hospedaje (hotel medio o Airb
 - **Plan de 7 días sugerido:** 3 noches Medellín (Guatapé, Comuna 13, cafetales) + 4 noches Cartagena (playa, Islas del Rosario, ciudad amurallada).
 - **Visa:** No requerida.
 
-### 2. Guatemala (Antigua + Lago Atitlán)
-- **Clima en noviembre:** 15-25 °C en las tierras altas, seco y soleado. Fin de temporada de lluvias.
+### 2. Guatemala (Antigua + Lago Atitlán + Semuc Champey)
+- **Clima en noviembre:** 15-25 °C en las tierras altas, seco y soleado. Fin de temporada de lluvias. Noches frescas en Atitlán y Antigua (llevar suéter).
 - **Vuelo:** ~2 h directo. Vuelos redondos desde ~$3,000-5,000 MXN.
-- **Presupuesto 7 días:** $8,000 - $13,000 MXN todo incluido.
-- **Por qué es top:** El destino más barato de la lista. Antigua es colonial y hermosa, Atitlán es impresionante. Comida desde $30-50 MXN. Hospedaje desde $250-400 MXN/noche. Cultura maya viva.
-- **Plan de 7 días sugerido:** 3 noches Antigua (ruinas, volcanes, mercados) + 4 noches Lago Atitlán (pueblos como San Marcos, San Pedro, Panajachel).
+- **Presupuesto 7 días:** $8,000 - $16,000 MXN según el plan (ver opciones abajo).
+- **Por qué es top:** El destino más barato de la lista con diferencia. Antigua es una de las ciudades coloniales más bonitas de América. El Lago Atitlán, rodeado de volcanes, es impactante. Cultura maya viva en los pueblos. Todo cuesta una fracción de lo que pagarías en México.
 - **Visa:** No requerida (solo pasaporte).
+
+#### Desglose semanal — Opción mochilera ($8,000 - $11,000 MXN)
+
+| Concepto | Estimado MXN |
+|----------|-------------|
+| Vuelo redondo CDMX-Guatemala City | $3,000 - $5,000 |
+| Shuttle Guatemala City-Antigua | $200 - $400 |
+| Hospedaje 7 noches (hostal/dormitorio) | $1,200 - $2,000 |
+| Comida (mercados y comedores, 3 al día) | $1,500 - $2,000 |
+| Transporte entre destinos (chicken buses + lanchas) | $400 - $700 |
+| Tours (volcán Pacaya o Acatenango, kayak Atitlán) | $800 - $1,500 |
+| **Total** | **$7,100 - $11,600** |
+
+#### Desglose semanal — Opción cómoda ($12,000 - $16,000 MXN)
+
+| Concepto | Estimado MXN |
+|----------|-------------|
+| Vuelo redondo CDMX-Guatemala City | $3,500 - $5,000 |
+| Shuttle Guatemala City-Antigua (privado) | $300 - $500 |
+| Hospedaje 7 noches (hotel boutique/Airbnb) | $2,500 - $4,000 |
+| Comida (restaurantes + mercados) | $2,500 - $3,500 |
+| Transporte entre destinos (shuttles turísticos) | $700 - $1,200 |
+| Tours (Acatenango 2D/1N, tour café, kayak, masajes) | $1,500 - $3,000 |
+| **Total** | **$11,000 - $17,200** |
+
+#### Planes sugeridos de 7 días
+
+**Plan A — Clásico (Antigua + Atitlán):**
+- 3 noches Antigua: volcán Pacaya o Acatenango (amanecer sobre volcán de Fuego), tour de café, ruinas coloniales, mercado de artesanías.
+- 4 noches Lago Atitlán: Panajachel como base, lanchas a San Pedro (mochilero, vida nocturna), San Marcos (yoga, meditación), Santiago Atitlán (cultura tz'utujil), kayak al amanecer.
+
+**Plan B — Aventurero (Antigua + Atitlán + Semuc Champey):**
+- 2 noches Antigua: ciudad colonial + volcán Pacaya.
+- 3 noches Lago Atitlán: pueblos + kayak.
+- 2 noches Semuc Champey/Lanquín: piscinas naturales turquesa escalonadas en medio de la selva, cuevas de K'anba, tubing en el río. Transporte largo (~9 h desde Atitlán) pero la experiencia es única.
+
+#### Lo que cuesta en Guatemala (referencia rápida)
+
+| Concepto | Precio MXN |
+|----------|-----------|
+| Comida completa en mercado | $30 - $50 |
+| Comida en restaurante turístico | $80 - $150 |
+| Cerveza Gallo (local) | $15 - $25 |
+| Café antigüeño | $20 - $40 |
+| Hostal (dormitorio) | $150 - $250/noche |
+| Hotel boutique en Antigua | $400 - $700/noche |
+| Lancha Panajachel-San Pedro | $15 - $30 |
+| Tour volcán Pacaya | $300 - $500 |
+| Tour Acatenango (2D/1N) | $600 - $1,000 |
 
 ### 3. Costa Rica
 - **Clima en noviembre:** Uno de los mejores meses. Costa Pacífico 25-33 °C con inicio de temporada seca; todo está verde por las lluvias recientes pero ya con sol constante. Caribe puede tener algo de lluvia, mejor evitarlo en noviembre.
