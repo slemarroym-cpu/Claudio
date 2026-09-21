@@ -232,3 +232,60 @@ Costa Rica es pequeña pero tiene microclimas muy distintos. En noviembre la dif
 4. **Come local:** Evita zonas turísticas para comer. En Colombia, Perú y Guatemala una comida completa en mercado cuesta $30-60 MXN.
 5. **Vuelos internos:** En Perú y Colombia, aerolíneas low-cost (Viva Air, JetSmart, SKY) tienen vuelos internos desde $500-1,500 MXN.
 6. **Seguro de viaje:** No lo omitas. Desde ~$500 MXN por semana con cobertura básica. Plataformas como Assist Card o World Nomads.
+
+---
+
+## Si viajas en DICIEMBRE en vez de noviembre
+
+Diciembre cambia el panorama: es **temporada alta** en casi todos estos destinos. Los precios suben 30-80% (especialmente después del 15 de diciembre), los vuelos se encarecen y hay más turistas. Pero el clima mejora en varios lugares.
+
+### Qué cambia por destino
+
+| Destino | Clima dic. vs nov. | Precio dic. vs nov. | Veredicto diciembre |
+|---------|-------------------|--------------------|--------------------|
+| **Colombia** | Similar o mejor — plena temporada seca en la costa | Vuelos +30-50%, hospedaje +20-40% | Sigue siendo buena opción, sobre todo primera quincena |
+| **Guatemala** | Mejor — temporada seca plena, cielos despejados | Sube poco (no es destino masivo) | **Excelente en diciembre** — sigue barato |
+| **Costa Rica** | Mejor — temporada seca establecida en Pacífico, menos lluvia incluso en interior | Vuelos +40-60%, hospedaje +30-50%, tours igual | Buena pero más cara. Primera quincena todavía razonable |
+| **Cuba** | Similar, ligeramente más fresco (22-28 °C) | Temporada alta: hospedaje +30-50% | Funciona, pero reserva con mucha anticipación |
+| **Perú** | **Peor** — temporada de lluvias fuerte en Cusco/Machu Picchu (dic-marzo) | Sube en Lima, baja en Cusco por lluvias | **No recomendado** para Machu Picchu en diciembre |
+| **Rep. Dominicana** | Mejor — seco y cálido | Temporada alta fuerte: all-inclusive +40-60% | Cara. Solo si encuentras oferta |
+| **Argentina** | Verano austral — caluroso (28-35 °C en Buenos Aires, 38 °C en Mendoza) | Vuelos +30%, hospedaje similar | Funciona pero calor intenso en Mendoza |
+| **Chile** | Verano — caluroso en Santiago, perfecto en Atacama y Patagonia | Patagonia sube mucho (temporada alta), Atacama sube poco | Atacama sigue bien; Patagonia carísima |
+
+### Recomendaciones específicas para diciembre
+
+**Los que MEJORAN en diciembre:**
+- **Guatemala** — Mejor clima que noviembre, precios casi iguales. El destino más inteligente en diciembre.
+- **Colombia (primera quincena)** — Temporada seca plena. Después del 15 sube todo.
+- **Chile (Atacama)** — Cielos perfectos, noches más templadas que en noviembre. Sube poco de precio.
+
+**Los que EMPEORAN en diciembre:**
+- **Perú (sierra)** — Lluvias fuertes en Cusco. El Camino Inca se vuelve resbaloso y nublado. Machu Picchu con niebla frecuente. Solo Lima se mantiene bien.
+- **Rep. Dominicana** — Precios de temporada alta elimina la ventaja del all-inclusive barato.
+
+**Los que se mantienen bien pero más caros:**
+- **Costa Rica** — Clima incluso mejor que noviembre (menos lluvia). Pero la segunda quincena de diciembre los precios se disparan. Si vas del 1-14 de diciembre, los precios son solo ligeramente más altos que noviembre.
+- **Cuba** — Clima similar, pero reserva con 2-3 meses de anticipación.
+- **Argentina** — Buenos Aires en verano es vibrante pero caluroso. Mendoza puede tener olas de calor.
+
+### Truco clave: primera vs segunda quincena
+
+| Periodo | Nivel de precios | Multitudes |
+|---------|-----------------|-----------|
+| 1-14 diciembre | Solo 10-20% más que noviembre | Moderadas |
+| 15-23 diciembre | +30-50% vs noviembre | Altas |
+| 24 dic - 6 enero | +50-100% vs noviembre (pico máximo) | Máximas |
+
+**Si tu viaje cae en la primera quincena de diciembre**, los precios son casi iguales a noviembre en la mayoría de destinos. El ahorro real está en evitar la semana de Navidad y Año Nuevo.
+
+### Top 3 para diciembre (primera quincena)
+
+1. **Guatemala** — Mismo precio que noviembre, mejor clima. El ganador claro.
+2. **Colombia** — Temporada seca, precios aún razonables antes del 15.
+3. **Costa Rica (Pacífico)** — Temporada seca plena, precios suben poco antes del 15.
+
+### Top 3 para diciembre (segunda quincena / Navidad)
+
+1. **Guatemala** — Sigue siendo el más barato aunque suba un poco.
+2. **Cuba** — Si reservas con anticipación, los precios son controlados (economía regulada).
+3. **Colombia (Medellín)** — La "Feria de las Flores" ya pasó pero la ciudad tiene alumbrados navideños espectaculares y el clima es perfecto todo diciembre.
