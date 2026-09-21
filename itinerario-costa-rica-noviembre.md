@@ -171,3 +171,93 @@ Tres rutas enfocadas en naturaleza y ecoturismo, diseñadas para evitar las lluv
 - **Si quieres cero lluvia y experiencia única:** Opción 3 (Guanacaste). Sol garantizado y la arribada masiva de tortugas en Ostional es un fenómeno que pocos turistas conocen.
 
 Las tres son excelentes para noviembre. Ninguna toca el Caribe.
+
+---
+
+## Operadores y tours verificados (precios 2026 en USD)
+
+Precios investigados en línea, verificados contra fuentes de operadores y plataformas de reserva. Convertir a MXN multiplicando por ~17-18 según tipo de cambio.
+
+### Zona Arenal / La Fortuna
+
+| Tour | Operador | Precio USD | Incluye | Fuente |
+|------|----------|-----------|---------|--------|
+| Combo aguas termales + Catarata La Fortuna + almuerzo | Arenal Volcano Day Tour | $105 | Transporte, entrada catarata, termales, almuerzo | [arenalvolcanodaytour.com](https://arenalvolcanodaytour.com/es/arenal-hot-springs-tour/) |
+| Aguas termales Baldi (25 piscinas) | Baldi Hot Springs | $60 | Entrada día completo | [arenalevergreen.com](https://www.arenalevergreen.com/espa%C3%B1ol/aguas-termales-volc%C3%A1n-arenal/aguas-termales-baldi/) |
+| Aguas termales Tabacón | Tabacón Resort | $89 - $105 | Entrada + acceso a jardines | [tabacon.com](https://www.tabacon.com) |
+| Aguas termales Ecotermales (más íntimo, menos gente) | Ecotermales | ~$45 - $55 | Entrada, máx 100 personas | [seventours.com](https://seventours.com/es/aguas-termales-en-la-fortuna/) |
+| Puentes colgantes Mistico | Mistico Park | $28 guiado / $24 libre | 3.2 km, 16 puentes, guía bilingüe | [thecostaricatoursite.com](https://www.thecostaricatoursite.com/es/arenal/tours/Puentes-Colgantes-en-Arenal.php) |
+| Sky Adventures (teleférico + puentes) | Sky Adventures | $70 - $85 | Teleférico + puentes colgantes | [skyadventures.travel](https://www.skyadventures.travel) |
+| Combo puentes colgantes + Catarata La Fortuna | Arenal Manoa | $160 | Guía, transporte, entradas | [arenalmanoa.com](https://arenalmanoa.com/es/tours/) |
+| Super Combo (puentes + catarata + termales) | Arenal Manoa | $114 + imp. adultos / $57 niños | Día completo | [arenalmanoa.com](https://arenalmanoa.com/es/tours/) |
+
+### Zona Monteverde
+
+| Tour | Operador | Precio USD | Incluye | Fuente |
+|------|----------|-----------|---------|--------|
+| Canopy / tirolesa original (10 cables + rappel + Tarzan Swing) | The Original Canopy Tour | $80 adultos / $68 estudiantes / $57 niños | 2-2.5 h, equipo, guía | [canopyoriginal.com](https://canopyoriginal.com/tour-and-rates/) |
+| Canopy extremo (13 cables, cable de 1 km) | Selvatura Park | ~$55 - $75 | 3.5 km total, Tarzan Swing | [selvatura.com](https://www.selvatura.com/tours/canopy-tour/) |
+| Tirolesa más larga de Costa Rica (1,590 m) | Aventura Canopy Tour | ~$60 - $85 | Cable superman de 1.6 km | [aventuracanopytour.com](https://www.aventuracanopytour.com/tours-adventures/monteverde-zipline-canopy-tour/) |
+| Caminata guiada Reserva Bosque Nuboso | Monteverde Cloud Forest Reserve | ~$25 entrada + $20 guía | 2-3 h, avistamiento quetzal | [monteverdetours.com](https://monteverdetours.com/hiking-cultural-wildlife-monteverde.html) |
+| Tour nocturno (ranas, insectos, serpientes) | Varios operadores locales | ~$30 - $45 | 2 h, guía con linterna UV | Reservar en Santa Elena |
+| Tour de café + chocolate | Varios (Don Juan, El Trapiche) | ~$35 - $50 | 2 h, degustación incluida | Reservar en Santa Elena |
+
+### Zona Manuel Antonio / Uvita
+
+| Tour | Operador | Precio USD | Incluye | Fuente |
+|------|----------|-----------|---------|--------|
+| Parque Nacional Manuel Antonio (entrada) | SINAC (gobierno) | $18.08 | Entrada, senderos. Guía aparte ~$25/persona | [sinac.go.cr](https://www.sinac.go.cr) |
+| Avistamiento de ballenas jorobadas | Ballena Tour Costa Rica (Uvita) | $65 + imp. grupo / $140 privado (4 pers.) | 3-4 h, snorkel incluido | [ballenatourcostarica.com](https://ballenatourcostarica.com/) |
+| Avistamiento de ballenas desde Manuel Antonio | Tucanes Tours | ~$80 - $100 | Transporte a Uvita + tour en bote | [tucanestours.com](https://tucanestours.com/whale-watching-marino-ballena-national-park/) |
+| Tour de manglares Damas | Operadores locales Manuel Antonio | ~$65 - $85 | 2.5 h en bote, guía, cocodrilos y aves | Reservar en Quepos |
+| Parque Nacional Marino Ballena (entrada) | SINAC | ~$6 | Playa cola de ballena | [sinac.go.cr](https://www.sinac.go.cr) |
+| Cataratas Nauyaca (a caballo o caminando) | Nauyaca Waterfalls | ~$45 caminando / $75 a caballo | Media jornada, poza para nadar | Reservar en Dominical |
+
+### Zona Guanacaste / Nicoya (tortugas)
+
+| Tour | Operador | Precio USD | Incluye | Fuente |
+|------|----------|-----------|---------|--------|
+| Arribada tortugas Ostional (directo en refugio) | Refugio Ostional + guía local | $10 - $20 | Entrada + guía certificado obligatorio | [entercostarica.com](https://www.entercostarica.com/attractions/national-parks-and-refuges/ostional-wildlife-refuge) |
+| Tour tortugas desde Tamarindo (día completo) | Rich Coast Tours | $80 | 7 h, transporte A/C, guía, desayuno tico | [richcoasttours.com](https://richcoasttours.com/turtle-nesting-hatching-tour/) |
+| Tour tortugas desde Sámara | Carrillo Tours | ~$50 - $60 | Transporte + guía, más cerca de Ostional | [carrillotours.com](https://carrillotours.com/tour-item/tourtletour-2/) |
+| Tour tortugas nocturno Playa Camaronal | Nature Tours Sámara | ~$45 - $60 | Tortugas baula (las más grandes), nocturno | [naturetourssamara.com](https://naturetourssamara.com/sea-turtle-watching-tour/) |
+| Snorkel Isla Chora (desde Sámara) | Operadores locales Sámara | ~$35 - $50 | Kayak + snorkel, equipo incluido | Reservar en Sámara |
+| Parque Nacional Rincón de la Vieja (entrada) | SINAC | ~$17 | Senderos, fumarolas, cataratas | [sinac.go.cr](https://www.sinac.go.cr) |
+
+### Operadores recomendados (certificados en sostenibilidad)
+
+Costa Rica tiene el programa **CST (Certificación para la Sostenibilidad Turística)** del Instituto Costarricense de Turismo. Busca operadores con esta certificación para asegurar prácticas de ecoturismo reales.
+
+| Operador | Zona | Especialidad | Sitio |
+|----------|------|-------------|-------|
+| Desafio Adventure Company | Arenal / La Fortuna | Aventura + paquetes multi-destino personalizados | [desafiocostarica.com](https://www.desafiocostarica.com) |
+| Rich Coast Tours | Guanacaste / Tamarindo | Tours de naturaleza, tortugas, snorkel | [richcoasttours.com](https://richcoasttours.com/) |
+| Carrillo Tours | Sámara / Carrillo | Tortugas, kayak, operador local | [carrillotours.com](https://carrillotours.com/) |
+| Selvatura Park | Monteverde | Canopy, puentes, jardín de mariposas | [selvatura.com](https://www.selvatura.com/) |
+| The Original Canopy Tour | Monteverde | La primera tirolesa de Costa Rica | [canopyoriginal.com](https://canopyoriginal.com/) |
+| Ballena Tour | Uvita | Avistamiento de ballenas, snorkel | [ballenatourcostarica.com](https://ballenatourcostarica.com/) |
+| Tucanes Tours | Manuel Antonio / Jacó | Tours variados Pacífico Central | [tucanestours.com](https://tucanestours.com/) |
+| Ecotermales | La Fortuna | Termales íntimas, máx 100 personas | Reservar por teléfono local |
+
+### Nota importante sobre la arribada de tortugas
+
+La arribada en Ostional ocurre **3-5 días al mes**, usualmente unos días antes de la luna nueva. No se puede predecir con exactitud. En noviembre la probabilidad es alta (septiembre-noviembre es temporada pico). Los operadores locales te contactan cuando comienza la actividad. Si planeas la Opción 3, reserva hospedaje flexible en Nosara/Sámara y mantén contacto con el operador para que te avise cuando inicie.
+
+---
+
+### Fuentes consultadas
+
+- [Arenal Volcano Day Tour — Guía termales 2026](https://arenalvolcanodaytour.com/es/arenal-hot-springs-tour/)
+- [Seven Tours — Termales La Fortuna](https://seventours.com/es/aguas-termales-en-la-fortuna/)
+- [The Original Canopy Tour — Tarifas](https://canopyoriginal.com/tour-and-rates/)
+- [Selvatura Park — Canopy Tour](https://www.selvatura.com/tours/canopy-tour/)
+- [Viator — Eco Tours Costa Rica 2026](https://www.viator.com/Costa-Rica-tours/Eco-Tours/d747-g9-c119)
+- [Ballena Tour Costa Rica — Whale Watching](https://ballenatourcostarica.com/)
+- [Rich Coast Tours — Turtle Tour](https://richcoasttours.com/turtle-nesting-hatching-tour/)
+- [Carrillo Tours — Turtle Tour Ostional](https://carrillotours.com/tour-item/tourtletour-2/)
+- [Nature Tours Sámara — Sea Turtle Tour](https://naturetourssamara.com/sea-turtle-watching-tour/)
+- [Enter Costa Rica — Ostional Wildlife Refuge](https://www.entercostarica.com/attractions/national-parks-and-refuges/ostional-wildlife-refuge)
+- [Visit Costa Rica — Ecoturismo](https://www.visitcostarica.com/things-to-do/sustainable-tourism)
+- [TourRadar — Top 10 operadores Costa Rica](https://www.tourradar.com/g/costa-rica-tour-operators)
+- [Zicasso — Eco Tours Costa Rica 2026](https://www.zicasso.com/costa-rica/eco-tours)
+- [Rough Guides — Whale Watching Uvita](https://www.roughguides.com/costa-rica/uvita-whale-watching/)
