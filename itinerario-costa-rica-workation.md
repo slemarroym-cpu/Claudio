@@ -35,7 +35,7 @@
 | **Socialtel La Fortuna** | La Fortuna | Alta velocidad | Hospedaje desde $35 USD/noche | Coworking con A/C, eventos networking |
 | **Selina La Fortuna** | La Fortuna | Alta velocidad | Coworking $15 USD/día, hospedaje desde $25 USD | Cadena nómada digital, comunidad |
 | **Arabigos Coffee House** | La Fortuna | WiFi gratis | Consumo | Café tranquilo, enchufes, bueno para 2-3 h |
-| **Selina Manuel Antonio** | Manuel Antonio | Alta velocidad | Coworking incluido en hospedaje | Rodeado de selva |
+| **Café Milagro / hospedajes con WiFi** | Manuel Antonio | Bueno | Consumo / incluido en hospedaje | Manuel Antonio no tiene coworking dedicado; trabajar desde el hotel o cafés |
 
 ---
 
