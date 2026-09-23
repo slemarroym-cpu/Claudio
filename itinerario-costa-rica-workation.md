@@ -35,7 +35,9 @@
 | **Socialtel La Fortuna** | La Fortuna | Alta velocidad | Hospedaje desde $35 USD/noche | Coworking con A/C, eventos networking |
 | **Selina La Fortuna** | La Fortuna | Alta velocidad | Coworking $15 USD/día, hospedaje desde $25 USD | Cadena nómada digital, comunidad |
 | **Arabigos Coffee House** | La Fortuna | WiFi gratis | Consumo | Café tranquilo, enchufes, bueno para 2-3 h |
-| **Café Milagro / hospedajes con WiFi** | Manuel Antonio | Bueno | Consumo / incluido en hospedaje | Manuel Antonio no tiene coworking dedicado; trabajar desde el hotel o cafés |
+| **Villas Jacquelina** | Quepos (cerca de Manuel Antonio) | 200 Mbps | Hospedaje desde $17.50 USD/noche | Coworking incluido, vistas selva, piscina, cocina comunal |
+| **Nomada's Digital Hostel** | Quepos centro | WiFi gratis | ~$30 USD/noche | Hostel para nómadas digitales, a minutos del centro, rating 9.1 |
+| **El Patio de Café Milagro** | Manuel Antonio | WiFi disponible | Consumo | Café/restaurante, abre 6:30 AM, terraza, bueno para sesiones cortas |
 
 ---
 
