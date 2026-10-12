@@ -82,33 +82,51 @@ function parseFlightInfo(label) {
   return info;
 }
 
-async function searchCabin(page, depart, ret, cabin, screenshotDir) {
+const MAX_ATTEMPTS = 3;
+
+async function loadResults(page, url) {
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+
+  for (const text of ['Accept all', 'Aceptar todo', 'I agree', 'Acepto']) {
+    const btn = page.locator(`button:has-text("${text}")`).first();
+    if (await btn.isVisible({ timeout: 1500 }).catch(() => false)) {
+      await btn.click();
+      break;
+    }
+  }
+
+  // Esperar a que aparezcan los resultados o el error de Google
+  await Promise.race([
+    page.waitForSelector('[aria-label^="From "]', { timeout: 30000 }),
+    page.getByText('something went wrong', { exact: false }).first().waitFor({ timeout: 30000 }),
+  ]).catch(() => {});
+  await page.waitForTimeout(2000);
+
+  return page.evaluate(() => [...new Set(
+    [...document.querySelectorAll('[aria-label]')]
+      .map(e => e.getAttribute('aria-label'))
+      .filter(l => /^From [\d,]+ US dollars/i.test(l))
+  )]);
+}
+
+async function searchCabin(context, depart, ret, cabin, screenshotDir) {
   const url = buildGoogleFlightsURL(depart, ret, cabin);
   console.log(`\n🔍 ${depart} → ${ret} [${cabin}]`);
+  const page = await context.newPage();
 
   try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
-
-    for (const text of ['Accept all', 'Aceptar todo', 'I agree', 'Acepto']) {
-      const btn = page.locator(`button:has-text("${text}")`).first();
-      if (await btn.isVisible({ timeout: 1500 }).catch(() => false)) {
-        await btn.click();
-        break;
+    let labels = [];
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      labels = await loadResults(page, url);
+      if (labels.length > 0) break;
+      if (attempt < MAX_ATTEMPTS) {
+        console.log(`   ↻ Google no mostró resultados, reintentando (${attempt + 1}/${MAX_ATTEMPTS})...`);
+        await page.waitForTimeout(8000 + Math.random() * 7000);
       }
     }
 
-    // Esperar a que aparezcan los resultados
-    await page.waitForSelector('[aria-label^="From "]', { timeout: 30000 }).catch(() => {});
-    await page.waitForTimeout(2000);
-
     const ssPath = path.join(screenshotDir, `${depart}_${ret}_${cabin}.png`);
     await page.screenshot({ path: ssPath, fullPage: true });
-
-    const labels = await page.evaluate(() => [...new Set(
-      [...document.querySelectorAll('[aria-label]')]
-        .map(e => e.getAttribute('aria-label'))
-        .filter(l => /^From [\d,]+ US dollars/i.test(l))
-    )]);
 
     const flights = labels.map(parseFlightInfo)
       .filter(f => f.price)
@@ -125,8 +143,12 @@ async function searchCabin(page, depart, ret, cabin, screenshotDir) {
   } catch (e) {
     console.log(`   ❌ Error: ${e.message.split('\n')[0]}`);
     return { search: { depart, return: ret, cabin }, url, flights: [], error: e.message };
+  } finally {
+    await page.close();
   }
 }
+
+const pause = () => new Promise(r => setTimeout(r, 6000 + Math.random() * 6000));
 
 function flightLine(f) {
   const stops = f.stops === 0 ? 'directo' : `${f.stops ?? '?'} escala(s)${f.layovers ? ' (' + f.layovers.join(', ') + ')' : ''}`;
@@ -204,15 +226,14 @@ async function main() {
 
   const browser = await chromium.launch({ headless: HEADLESS });
   const context = await browser.newContext({ locale: 'en-US', viewport: { width: 1280, height: 900 } });
-  const page = await context.newPage();
   const allResults = [];
 
   for (const s of CONFIG.searches) {
-    allResults.push(await searchCabin(page, s.depart, s.return, 'economy', screenshotDir));
-    await page.waitForTimeout(2000 + Math.random() * 2000);
+    allResults.push(await searchCabin(context, s.depart, s.return, 'economy', screenshotDir));
+    await pause();
     if (s.depart === CONFIG.premiumFor.depart && s.return === CONFIG.premiumFor.return) {
-      allResults.push(await searchCabin(page, s.depart, s.return, 'premium_economy', screenshotDir));
-      await page.waitForTimeout(2000 + Math.random() * 2000);
+      allResults.push(await searchCabin(context, s.depart, s.return, 'premium_economy', screenshotDir));
+      await pause();
     }
   }
 
