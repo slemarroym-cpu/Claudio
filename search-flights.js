@@ -27,10 +27,9 @@ const CONFIG = {
 };
 
 function buildGoogleFlightsURL(depart, ret, cabin) {
-  const cabinCode = cabin === 'premium_economy' ? 2 : 1;
-  const d = depart.replace(/-/g, '-');
-  const r = ret.replace(/-/g, '-');
-  return `https://www.google.com/travel/flights?q=round+trip+flights+from+${CONFIG.origin.code}+to+${CONFIG.destination.code}+departing+${d}+returning+${r}&curr=${CONFIG.currency}&hl=en&gl=us&travelClass=${cabinCode}`;
+  const cabinText = cabin === 'premium_economy' ? ' premium economy' : ' economy';
+  const q = `Flights to ${CONFIG.destination.code} from ${CONFIG.origin.code} on ${depart} through ${ret}${cabinText}`;
+  return `https://www.google.com/travel/flights?q=${encodeURIComponent(q)}&curr=${CONFIG.currency}&hl=en&gl=us`;
 }
 
 async function extractFlightData(page) {
