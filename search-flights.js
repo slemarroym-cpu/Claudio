@@ -188,15 +188,33 @@ function generateReport(allResults, timestamp) {
   lines.push('\n── RESUMEN (solo vuelos que llegan a tiempo) ──────────────');
   if (e) lines.push(`  💰 Mejor Economy:         $${e.price} USD — ${e.airline || 'N/A'}, ida ${e.search.depart} / vuelta ${e.search.return}`);
   if (p) lines.push(`  💰 Mejor Premium Economy: $${p.price} USD — ${p.airline || 'N/A'}, ida ${p.search.depart} / vuelta ${p.search.return}`);
+  const alerts = [];
   if (e && p) {
     const diff = (p.price - e.price) / e.price * 100;
     lines.push(`  📊 Diferencia PE vs E:    +${diff.toFixed(1)}%`);
-    if (diff < 25) lines.push('  🔔 ¡ALERTA! Premium Economy está a menos del 25% de Economy.');
+    if (diff < 25) alerts.push(`Premium Economy $${p.price} (${p.airline}) solo +${diff.toFixed(0)}% sobre Economy $${e.price}`);
   }
-  if (e && e.price < 800) lines.push('  🔔 ¡ALERTA! Economy por debajo de $800 USD.');
+  if (e && e.price < 800) alerts.push(`Economy a $${e.price} USD (${e.airline}), ida ${e.search.depart}`);
+  alerts.forEach(a => lines.push(`  🔔 ¡ALERTA! ${a}`));
   lines.push(`\n${'═'.repeat(70)}\n`);
 
-  return { text: lines.join('\n'), minEcon: e?.price ?? null, minPrem: p?.price ?? null };
+  return { text: lines.join('\n'), minEcon: e?.price ?? null, minPrem: p?.price ?? null, alerts };
+}
+
+function notify(alerts) {
+  if (alerts.length === 0 || process.platform !== 'win32') return;
+  const ps = `
+[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] > $null
+$xml = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02)
+$t = $xml.GetElementsByTagName('text')
+$t.Item(0).AppendChild($xml.CreateTextNode('Vuelos MEX-BUD')) > $null
+$t.Item(1).AppendChild($xml.CreateTextNode($env:FLIGHT_ALERT)) > $null
+$app = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe'
+[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($app).Show([Windows.UI.Notifications.ToastNotification]::new($xml))
+`;
+  require('child_process').spawnSync('powershell.exe', ['-NoProfile', '-Command', ps], {
+    env: { ...process.env, FLIGHT_ALERT: alerts.join(' | ') },
+  });
 }
 
 function updateHistory(timestamp, minEcon, minPrem) {
@@ -213,8 +231,12 @@ function updateHistory(timestamp, minEcon, minPrem) {
     const pct = (minEcon - prev.economyMin) / prev.economyMin * 100;
     const arrow = pct > 0 ? '📈' : pct < 0 ? '📉' : '➡️';
     console.log(`${arrow} Tendencia Economy: $${prev.economyMin} (${prev.date}) → $${minEcon} (${pct > 0 ? '+' : ''}${pct.toFixed(1)}%)`);
-    if (pct < -15) console.log('🚨 ¡CAÍDA DE PRECIO MAYOR AL 15%! Considera comprar.');
+    if (pct < -15) {
+      console.log('🚨 ¡CAÍDA DE PRECIO MAYOR AL 15%! Considera comprar.');
+      return [`Economy bajó ${Math.abs(pct).toFixed(0)}%: $${prev.economyMin} → $${minEcon}`];
+    }
   }
+  return [];
 }
 
 async function main() {
@@ -243,7 +265,8 @@ async function main() {
   console.log(report.text);
   fs.writeFileSync(path.join(screenshotDir, 'report.txt'), report.text);
   fs.writeFileSync(path.join(screenshotDir, 'raw-data.json'), JSON.stringify(allResults, null, 2));
-  updateHistory(timestamp, report.minEcon, report.minPrem);
+  const dropAlerts = updateHistory(timestamp, report.minEcon, report.minPrem);
+  notify([...dropAlerts, ...report.alerts]);
   console.log(`📄 Reporte y capturas en: ${path.resolve(screenshotDir)}`);
 }
 

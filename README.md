@@ -34,11 +34,12 @@ crontab -e
 0 9 * * * cd /ruta/a/Claudio && node search-flights.js >> flight-results/cron.log 2>&1
 ```
 
-**Windows (Task Scheduler):**
-1. Abrir Task Scheduler
-2. Create Basic Task → "Flight Search"
-3. Trigger: Daily a las 9:00 AM
-4. Action: Start Program → `node` con argumento `C:\ruta\a\Claudio\search-flights.js`
+**Windows:** desde PowerShell, dentro de la carpeta del proyecto:
+```powershell
+.\schedule-windows.ps1
+```
+Crea la tarea "Vuelos MEX-BUD" (diaria, 9:07 AM; si la PC estaba apagada, corre al encender).
+La salida de cada corrida queda en `flight-results\run.log` y, si hay alerta, aparece una notificación de Windows.
 
 ## Resultados
 
