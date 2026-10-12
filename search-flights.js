@@ -6,8 +6,8 @@ const path = require('path');
 //  CONFIGURACIÓN — ajusta aquí tus parámetros
 // ═══════════════════════════════════════════════════════════
 const CONFIG = {
-  origin: { code: 'MEX', name: 'Mexico City' },
-  destination: { code: 'BUD', name: 'Budapest' },
+  origin: 'MEX',
+  destination: 'BUD',
   searches: [
     // IDA jul 2 → VUELTA jul 24 (principal)
     { depart: '2027-07-02', return: '2027-07-24' },
@@ -17,361 +17,213 @@ const CONFIG = {
     // Alternativas de vuelta
     { depart: '2027-07-02', return: '2027-07-21' },
     { depart: '2027-07-02', return: '2027-07-27' },
-    // Salida anticipada (para llegar sáb 3 o dom 4)
+    // Salida anticipada
     { depart: '2027-06-30', return: '2027-07-24' },
   ],
+  premiumFor: { depart: '2027-07-02', return: '2027-07-24' },
   currency: 'USD',
-  passengers: 1,
+  sundayLatestArrivalHour: 14,
   outputDir: './flight-results',
   historyFile: './flight-results/price-history.json',
 };
 
+// Pon HEADLESS=false para ver el navegador mientras busca
+const HEADLESS = process.env.HEADLESS !== 'false';
+
 function buildGoogleFlightsURL(depart, ret, cabin) {
   const cabinText = cabin === 'premium_economy' ? ' premium economy' : ' economy';
-  const q = `Flights to ${CONFIG.destination.code} from ${CONFIG.origin.code} on ${depart} through ${ret}${cabinText}`;
+  const q = `Flights to ${CONFIG.destination} from ${CONFIG.origin} on ${depart} through ${ret}${cabinText}`;
   return `https://www.google.com/travel/flights?q=${encodeURIComponent(q)}&curr=${CONFIG.currency}&hl=en&gl=us`;
 }
 
-async function extractFlightData(page) {
-  return page.evaluate(() => {
-    const flights = [];
-
-    // Google Flights uses aria-labels on list items with full flight info
-    const ariaEls = document.querySelectorAll('[aria-label]');
-    for (const el of ariaEls) {
-      const label = el.getAttribute('aria-label') || '';
-      // Flight result labels typically contain price, duration, stops, airline
-      if (label.match(/\$[\d,]+/) && (label.includes('stop') || label.includes('Nonstop') || label.includes('escala') || label.includes('hr') || label.includes('min'))) {
-        flights.push({ source: 'aria-label', text: label.substring(0, 500) });
-      }
-    }
-
-    // Look for price elements (leaf nodes with $ amounts)
-    const prices = [];
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-    while (walker.nextNode()) {
-      const text = walker.currentNode.textContent.trim();
-      if (text.match(/^\$[\d,]+$/) || text.match(/^US\$[\d,]+$/) || text.match(/^MXN[\s$]*[\d,]+$/)) {
-        prices.push(text);
-      }
-    }
-
-    // Look for specific Google Flights result containers
-    const resultItems = document.querySelectorAll('[data-resultid]');
-    const structured = [];
-    resultItems.forEach((item, i) => {
-      if (i >= 15) return;
-      const text = item.textContent.replace(/\s+/g, ' ').trim().substring(0, 400);
-      structured.push(text);
-    });
-
-    // Best price elements (Google Flights often highlights the best)
-    const bestPriceEls = document.querySelectorAll('[aria-label*="best"], [aria-label*="mejor"], [aria-label*="cheapest"]');
-    const bestPrices = [];
-    bestPriceEls.forEach(el => {
-      bestPrices.push(el.textContent.replace(/\s+/g, ' ').trim().substring(0, 300));
-    });
-
-    // Page text for fallback parsing
-    const bodyText = document.body?.innerText?.substring(0, 5000) || '';
-
-    return {
-      flights,
-      prices: [...new Set(prices)],
-      structured,
-      bestPrices,
-      bodySnippet: bodyText.substring(0, 2000),
-      url: window.location.href,
-    };
-  });
+function to24h(time) {
+  const m = (time || '').match(/(\d{1,2}):(\d{2})\s?([AP]M)/i);
+  if (!m) return NaN;
+  let h = parseInt(m[1]) % 12;
+  if (m[3].toUpperCase() === 'PM') h += 12;
+  return h + parseInt(m[2]) / 60;
 }
 
-function parseFlightInfo(ariaLabel) {
-  const info = { raw: ariaLabel };
+function arrivalTag(f) {
+  const m = (f.arriveDate || '').match(/(June|July) (\d+)/);
+  if (!m) return '';
+  const day = m[1] === 'June' ? 0 : parseInt(m[2]);
+  if (day >= 5) return '❌ llega tarde';
+  if (day === 4) return to24h(f.arriveTime) < CONFIG.sundayLatestArrivalHour ? '✅ dom 4 temprano' : '⚠️ dom 4 tarde';
+  if (day === 3) return '✅ sáb 3';
+  return 'llega antes del sáb';
+}
 
-  // Extract price
-  const priceMatch = ariaLabel.match(/\$([\d,]+)/);
-  if (priceMatch) info.price = parseInt(priceMatch[1].replace(/,/g, ''));
-
-  // Extract duration
-  const durMatch = ariaLabel.match(/(\d+)\s*hr\s*(\d+)?\s*min/);
-  if (durMatch) info.duration = `${durMatch[1]}h${durMatch[2] || '0'}m`;
-
-  // Extract stops
-  if (ariaLabel.match(/Nonstop|Sin escalas/i)) {
-    info.stops = 0;
-  } else {
-    const stopMatch = ariaLabel.match(/(\d+)\s*stop/i) || ariaLabel.match(/(\d+)\s*escala/i);
-    if (stopMatch) info.stops = parseInt(stopMatch[1]);
+// Google Flights describe cada vuelo así:
+// "From 1,234 US dollars round trip total. 1 stop flight with Lufthansa. Leaves Mexico City
+//  International Airport at 5:30 PM on Friday, July 2 and arrives at Budapest Ferenc Liszt
+//  International Airport at 2:15 PM on Saturday, July 3. Total duration 15 hr 45 min.
+//  Layover (1 of 1) is a 2 hr layover at Frankfurt Airport in Frankfurt. ..."
+function parseFlightInfo(label) {
+  const info = { raw: label };
+  const price = label.match(/From ([\d,]+) US dollars/i);
+  if (price) info.price = parseInt(price[1].replace(/,/g, ''));
+  if (/Nonstop/i.test(label)) info.stops = 0;
+  else {
+    const s = label.match(/(\d+) stops? flight/i);
+    if (s) info.stops = parseInt(s[1]);
   }
-
-  // Extract airline
-  const airlinePatterns = [
-    'Lufthansa', 'Turkish Airlines', 'KLM', 'Air France', 'Aeromexico',
-    'Iberia', 'British Airways', 'American Airlines', 'United', 'Delta',
-    'Air Canada', 'Swiss', 'Austrian', 'LOT', 'Finnair', 'SAS',
-    'TAP', 'Condor', 'Eurowings',
-  ];
-  for (const airline of airlinePatterns) {
-    if (ariaLabel.includes(airline)) {
-      info.airline = airline;
-      break;
-    }
-  }
-
-  // Extract times
-  const timeMatch = ariaLabel.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*[-–]\s*(\d{1,2}:\d{2}\s*[AP]M)/i);
-  if (timeMatch) {
-    info.departTime = timeMatch[1];
-    info.arriveTime = timeMatch[2];
-  }
-
+  const airline = label.match(/flight with ([^.]+)\./i);
+  if (airline) info.airline = airline[1].trim();
+  const dep = label.match(/Leaves .+? at (\d{1,2}:\d{2}\s?[AP]M) on (\w+, \w+ \d+)/i);
+  if (dep) { info.departTime = dep[1]; info.departDate = dep[2]; }
+  const arr = label.match(/arrives at .+? at (\d{1,2}:\d{2}\s?[AP]M) on (\w+, \w+ \d+)/i);
+  if (arr) { info.arriveTime = arr[1]; info.arriveDate = arr[2]; }
+  const dur = label.match(/Total duration (\d+) hr(?: (\d+) min)?/i);
+  if (dur) info.duration = `${dur[1]}h${dur[2] || 0}m`;
+  const layovers = [...label.matchAll(/layover at [^.]+? in ([^.]+?)\./gi)].map(m => m[1].trim());
+  if (layovers.length) info.layovers = layovers;
+  info.arrivalTag = arrivalTag(info);
   return info;
 }
 
 async function searchCabin(page, depart, ret, cabin, screenshotDir) {
   const url = buildGoogleFlightsURL(depart, ret, cabin);
-  const label = `${depart} → ${ret} [${cabin}]`;
-  console.log(`\n🔍 ${label}`);
+  console.log(`\n🔍 ${depart} → ${ret} [${cabin}]`);
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-    await page.waitForTimeout(4000);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
 
-    // Dismiss cookie/consent dialogs
-    for (const text of ['Accept all', 'Aceptar todo', 'Accept', 'Aceptar', 'I agree', 'Acepto']) {
-      try {
-        const btn = page.locator(`button:has-text("${text}")`).first();
-        if (await btn.isVisible({ timeout: 1000 })) {
-          await btn.click();
-          await page.waitForTimeout(1000);
-          break;
-        }
-      } catch {}
-    }
-
-    // Wait for results to load
-    await page.waitForTimeout(3000);
-
-    // Screenshot
-    const ssName = `${depart}_${ret}_${cabin}.png`;
-    const ssPath = path.join(screenshotDir, ssName);
-    await page.screenshot({ path: ssPath, fullPage: false });
-
-    // Extract data
-    const data = await extractFlightData(page);
-
-    // Parse flight details from aria-labels
-    const parsed = data.flights.map(f => parseFlightInfo(f.text));
-
-    const result = {
-      search: { depart, return: ret, cabin },
-      url: data.url,
-      screenshot: ssPath,
-      flightsFound: parsed.length,
-      flights: parsed.sort((a, b) => (a.price || 99999) - (b.price || 99999)),
-      rawPrices: data.prices,
-      bestPrices: data.bestPrices,
-      structured: data.structured,
-    };
-
-    // Print summary
-    if (parsed.length > 0) {
-      const cheapest = parsed.find(f => f.price);
-      if (cheapest) {
-        console.log(`   ✅ ${parsed.length} vuelos encontrados — más barato: $${cheapest.price} USD (${cheapest.airline || 'N/A'}, ${cheapest.stops ?? '?'} escala(s), ${cheapest.duration || 'N/A'})`);
-      } else {
-        console.log(`   ⚠️  ${parsed.length} vuelos encontrados pero sin precios parseables`);
+    for (const text of ['Accept all', 'Aceptar todo', 'I agree', 'Acepto']) {
+      const btn = page.locator(`button:has-text("${text}")`).first();
+      if (await btn.isVisible({ timeout: 1500 }).catch(() => false)) {
+        await btn.click();
+        break;
       }
-    } else if (data.prices.length > 0) {
-      console.log(`   💰 Precios en página: ${data.prices.slice(0, 5).join(', ')}`);
-    } else if (data.structured.length > 0) {
-      console.log(`   📋 ${data.structured.length} resultados encontrados (revisar screenshot)`);
-    } else {
-      console.log(`   ❌ No se encontraron resultados (revisar screenshot: ${ssName})`);
     }
 
-    return result;
+    // Esperar a que aparezcan los resultados
+    await page.waitForSelector('[aria-label^="From "]', { timeout: 30000 }).catch(() => {});
+    await page.waitForTimeout(2000);
 
+    const ssPath = path.join(screenshotDir, `${depart}_${ret}_${cabin}.png`);
+    await page.screenshot({ path: ssPath, fullPage: true });
+
+    const labels = await page.evaluate(() => [...new Set(
+      [...document.querySelectorAll('[aria-label]')]
+        .map(e => e.getAttribute('aria-label'))
+        .filter(l => /^From [\d,]+ US dollars/i.test(l))
+    )]);
+
+    const flights = labels.map(parseFlightInfo)
+      .filter(f => f.price)
+      .sort((a, b) => a.price - b.price);
+
+    if (flights.length > 0) {
+      const f = flights[0];
+      console.log(`   ✅ ${flights.length} vuelos — más barato: $${f.price} USD (${f.airline || 'N/A'}, ${f.stops ?? '?'} escala(s), ${f.duration || 'N/A'})`);
+    } else {
+      console.log(`   ❌ Sin resultados — revisa la captura: ${ssPath}`);
+    }
+
+    return { search: { depart, return: ret, cabin }, url, screenshot: ssPath, flights };
   } catch (e) {
-    console.log(`   ❌ Error: ${e.message}`);
-    return { search: { depart, return: ret, cabin }, error: e.message };
+    console.log(`   ❌ Error: ${e.message.split('\n')[0]}`);
+    return { search: { depart, return: ret, cabin }, url, flights: [], error: e.message };
   }
+}
+
+function flightLine(f) {
+  const stops = f.stops === 0 ? 'directo' : `${f.stops ?? '?'} escala(s)${f.layovers ? ' (' + f.layovers.join(', ') + ')' : ''}`;
+  const arrival = f.arriveDate ? `llega ${f.arriveDate} ${f.arriveTime}` : '';
+  return `    $${f.price} USD | ${f.airline || 'N/A'} | ${stops} | ${f.duration || 'N/A'} | ${arrival} ${f.arrivalTag || ''}`;
+}
+
+function usable(f) {
+  return !/^(❌|⚠️)/.test(f.arrivalTag || '');
 }
 
 function generateReport(allResults, timestamp) {
   const lines = [];
   lines.push(`\n${'═'.repeat(70)}`);
-  lines.push(`  REPORTE DE VUELOS: MEX → BUD (Julio 2027)`);
+  lines.push(`  REPORTE DE VUELOS REDONDOS: MEX → BUD (Julio 2027)`);
   lines.push(`  Fecha de búsqueda: ${timestamp}`);
-  lines.push(`${'═'.repeat(70)}\n`);
+  lines.push(`  Precios: total ida y vuelta por persona (Google Flights)`);
+  lines.push(`${'═'.repeat(70)}`);
 
-  const economyResults = allResults.filter(r => r.search?.cabin === 'economy' && r.flights?.length > 0);
-  const premiumResults = allResults.filter(r => r.search?.cabin === 'premium_economy' && r.flights?.length > 0);
-
-  // Economy summary
-  lines.push('── ECONOMY ──────────────────────────────────────────────');
-  if (economyResults.length > 0) {
-    for (const result of economyResults) {
-      lines.push(`\n  ${result.search.depart} → ${result.search.return}:`);
-      const top5 = result.flights.filter(f => f.price).slice(0, 5);
-      if (top5.length > 0) {
-        for (const f of top5) {
-          lines.push(`    $${f.price} USD | ${f.airline || 'N/A'} | ${f.stops ?? '?'} escala(s) | ${f.duration || 'N/A'} | ${f.departTime || ''}-${f.arriveTime || ''}`);
-        }
-      } else {
-        lines.push(`    (precios no parseables — revisar screenshots)`);
-      }
-    }
-  } else {
-    lines.push('  No se encontraron resultados de economy.');
-  }
-
-  // Premium Economy summary
-  lines.push('\n── PREMIUM ECONOMY ──────────────────────────────────────');
-  if (premiumResults.length > 0) {
-    for (const result of premiumResults) {
-      lines.push(`\n  ${result.search.depart} → ${result.search.return}:`);
-      const top5 = result.flights.filter(f => f.price).slice(0, 5);
-      if (top5.length > 0) {
-        for (const f of top5) {
-          lines.push(`    $${f.price} USD | ${f.airline || 'N/A'} | ${f.stops ?? '?'} escala(s) | ${f.duration || 'N/A'}`);
-        }
-      }
-    }
-  } else {
-    lines.push('  No se encontraron resultados de premium economy.');
-  }
-
-  // Comparison
-  const allEconPrices = economyResults.flatMap(r => r.flights.filter(f => f.price).map(f => f.price));
-  const allPremPrices = premiumResults.flatMap(r => r.flights.filter(f => f.price).map(f => f.price));
-  const minEcon = allEconPrices.length > 0 ? Math.min(...allEconPrices) : null;
-  const minPrem = allPremPrices.length > 0 ? Math.min(...allPremPrices) : null;
-
-  lines.push('\n── RESUMEN ──────────────────────────────────────────────');
-  if (minEcon) lines.push(`  💰 Mejor Economy:         $${minEcon} USD`);
-  if (minPrem) lines.push(`  💰 Mejor Premium Economy: $${minPrem} USD`);
-  if (minEcon && minPrem) {
-    const diff = ((minPrem - minEcon) / minEcon * 100).toFixed(1);
-    lines.push(`  📊 Diferencia PE vs E:    +${diff}%`);
-    if (parseFloat(diff) < 25) {
-      lines.push(`  🔔 ¡ALERTA! Premium Economy está a menos del 25% de diferencia — vale la pena considerar upgrade.`);
+  for (const [cabin, title] of [['economy', 'ECONOMY'], ['premium_economy', 'PREMIUM ECONOMY']]) {
+    lines.push(`\n── ${title} ${'─'.repeat(50 - title.length)}`);
+    const results = allResults.filter(r => r.search.cabin === cabin);
+    for (const r of results) {
+      lines.push(`\n  Ida ${r.search.depart} → Vuelta ${r.search.return}:`);
+      if (r.flights.length === 0) lines.push('    (sin resultados — revisa la captura)');
+      r.flights.slice(0, 5).forEach(f => lines.push(flightLine(f)));
     }
   }
-  if (minEcon && minEcon < 800) {
-    lines.push(`  🔔 ¡ALERTA! Economy por debajo de $800 USD — precio atractivo.`);
-  }
 
+  const best = cabin => allResults
+    .filter(r => r.search.cabin === cabin)
+    .flatMap(r => r.flights.filter(usable).map(f => ({ ...f, search: r.search })))
+    .sort((a, b) => a.price - b.price)[0];
+  const e = best('economy');
+  const p = best('premium_economy');
+
+  lines.push('\n── RESUMEN (solo vuelos que llegan a tiempo) ──────────────');
+  if (e) lines.push(`  💰 Mejor Economy:         $${e.price} USD — ${e.airline || 'N/A'}, ida ${e.search.depart} / vuelta ${e.search.return}`);
+  if (p) lines.push(`  💰 Mejor Premium Economy: $${p.price} USD — ${p.airline || 'N/A'}, ida ${p.search.depart} / vuelta ${p.search.return}`);
+  if (e && p) {
+    const diff = (p.price - e.price) / e.price * 100;
+    lines.push(`  📊 Diferencia PE vs E:    +${diff.toFixed(1)}%`);
+    if (diff < 25) lines.push('  🔔 ¡ALERTA! Premium Economy está a menos del 25% de Economy.');
+  }
+  if (e && e.price < 800) lines.push('  🔔 ¡ALERTA! Economy por debajo de $800 USD.');
   lines.push(`\n${'═'.repeat(70)}\n`);
-  return lines.join('\n');
+
+  return { text: lines.join('\n'), minEcon: e?.price ?? null, minPrem: p?.price ?? null };
 }
 
-function updateHistory(allResults, timestamp) {
+function updateHistory(timestamp, minEcon, minPrem) {
   let history = [];
   try {
-    if (fs.existsSync(CONFIG.historyFile)) {
-      history = JSON.parse(fs.readFileSync(CONFIG.historyFile, 'utf8'));
-    }
+    history = JSON.parse(fs.readFileSync(CONFIG.historyFile, 'utf8'));
   } catch {}
 
-  const economyPrices = allResults
-    .filter(r => r.search?.cabin === 'economy')
-    .flatMap(r => (r.flights || []).filter(f => f.price).map(f => f.price));
-  const premiumPrices = allResults
-    .filter(r => r.search?.cabin === 'premium_economy')
-    .flatMap(r => (r.flights || []).filter(f => f.price).map(f => f.price));
-
-  const entry = {
-    date: timestamp,
-    economyMin: economyPrices.length > 0 ? Math.min(...economyPrices) : null,
-    economyAvg: economyPrices.length > 0 ? Math.round(economyPrices.reduce((a, b) => a + b, 0) / economyPrices.length) : null,
-    premiumEconMin: premiumPrices.length > 0 ? Math.min(...premiumPrices) : null,
-    economyCount: economyPrices.length,
-    premiumCount: premiumPrices.length,
-  };
-
-  history.push(entry);
+  const prev = [...history].reverse().find(h => h.economyMin);
+  history.push({ date: timestamp, economyMin: minEcon, premiumEconMin: minPrem });
   fs.writeFileSync(CONFIG.historyFile, JSON.stringify(history, null, 2));
 
-  // Show price trend
-  if (history.length > 1) {
-    const prev = history[history.length - 2];
-    if (prev.economyMin && entry.economyMin) {
-      const change = entry.economyMin - prev.economyMin;
-      const pct = ((change / prev.economyMin) * 100).toFixed(1);
-      const arrow = change > 0 ? '📈' : change < 0 ? '📉' : '➡️';
-      console.log(`\n${arrow} Tendencia Economy: $${prev.economyMin} → $${entry.economyMin} (${change > 0 ? '+' : ''}${pct}%)`);
-
-      if (change < 0 && Math.abs(parseFloat(pct)) > 15) {
-        console.log('🚨 ¡CAÍDA DE PRECIO MAYOR AL 15%! Considera comprar.');
-      }
-    }
+  if (prev && minEcon) {
+    const pct = (minEcon - prev.economyMin) / prev.economyMin * 100;
+    const arrow = pct > 0 ? '📈' : pct < 0 ? '📉' : '➡️';
+    console.log(`${arrow} Tendencia Economy: $${prev.economyMin} (${prev.date}) → $${minEcon} (${pct > 0 ? '+' : ''}${pct.toFixed(1)}%)`);
+    if (pct < -15) console.log('🚨 ¡CAÍDA DE PRECIO MAYOR AL 15%! Considera comprar.');
   }
-
-  return entry;
 }
 
 async function main() {
   const timestamp = new Date().toISOString().split('T')[0];
-  console.log('╔══════════════════════════════════════════════════════╗');
-  console.log('║  Flight Search Agent: MEX → BUD (Julio 2027)       ║');
-  console.log(`║  ${timestamp}                                       ║`);
-  console.log('╚══════════════════════════════════════════════════════╝');
+  console.log(`Flight Search Agent: MEX → BUD (Julio 2027) — ${timestamp}`);
 
-  // Create output directory
   const screenshotDir = path.join(CONFIG.outputDir, timestamp);
   fs.mkdirSync(screenshotDir, { recursive: true });
 
-  const browser = await chromium.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
-  });
-
-  const context = await browser.newContext({
-    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-    locale: 'en-US',
-    viewport: { width: 1280, height: 900 },
-  });
-
+  const browser = await chromium.launch({ headless: HEADLESS });
+  const context = await browser.newContext({ locale: 'en-US', viewport: { width: 1280, height: 900 } });
   const page = await context.newPage();
   const allResults = [];
 
-  for (const search of CONFIG.searches) {
-    // Economy
-    const econResult = await searchCabin(page, search.depart, search.return, 'economy', screenshotDir);
-    allResults.push(econResult);
+  for (const s of CONFIG.searches) {
+    allResults.push(await searchCabin(page, s.depart, s.return, 'economy', screenshotDir));
     await page.waitForTimeout(2000 + Math.random() * 2000);
-
-    // Premium Economy (only for primary search to reduce requests)
-    if (search.depart === '2027-07-02' && search.return === '2027-07-24') {
-      const premResult = await searchCabin(page, search.depart, search.return, 'premium_economy', screenshotDir);
-      allResults.push(premResult);
+    if (s.depart === CONFIG.premiumFor.depart && s.return === CONFIG.premiumFor.return) {
+      allResults.push(await searchCabin(page, s.depart, s.return, 'premium_economy', screenshotDir));
       await page.waitForTimeout(2000 + Math.random() * 2000);
     }
   }
 
   await browser.close();
 
-  // Generate and print report
   const report = generateReport(allResults, timestamp);
-  console.log(report);
-
-  // Save report to file
-  const reportPath = path.join(screenshotDir, 'report.txt');
-  fs.writeFileSync(reportPath, report);
-  console.log(`📄 Reporte guardado en: ${reportPath}`);
-
-  // Save raw data
-  const dataPath = path.join(screenshotDir, 'raw-data.json');
-  fs.writeFileSync(dataPath, JSON.stringify(allResults, null, 2));
-
-  // Update price history
-  updateHistory(allResults, timestamp);
-  console.log(`📊 Historial actualizado en: ${CONFIG.historyFile}`);
-
-  // Save screenshots summary
-  console.log(`📸 Screenshots guardados en: ${screenshotDir}/`);
+  console.log(report.text);
+  fs.writeFileSync(path.join(screenshotDir, 'report.txt'), report.text);
+  fs.writeFileSync(path.join(screenshotDir, 'raw-data.json'), JSON.stringify(allResults, null, 2));
+  updateHistory(timestamp, report.minEcon, report.minPrem);
+  console.log(`📄 Reporte y capturas en: ${path.resolve(screenshotDir)}`);
 }
 
 main().catch(e => {
